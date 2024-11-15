@@ -38,19 +38,27 @@ Figure 02  Encoder 8 * 3
 
 /* write all the steps invloved */
 
-**PROGRAM**
+**PROGRAM**module experiment5(din,a,b,c);
+input [0:7] din;
+output a,b,c;
+assign a=(din[4]| din[5]| din[6]| din[7]);
+assign b=(din[2]| din[3]| din[6]| din[7]);
+assign c=(din[1]| din[3]| din[5]| din[7]);
+endmodule
 
 /* Program for Encoder 8 To 3 in Dataflow Modelling and verify its truth table in quartus using Verilog programming. 
 
-Developed by: RegisterNumber:
+Developed by:R Rabin RegisterNumber:24900518
 */
 
 **RTL LOGIC FOR Encoder 8 To 3 in Dataflow Modelling**
+![Screenshot 2024-11-15 214647](https://github.com/user-attachments/assets/ace664d4-0ebe-486f-a9e4-d0c76188e625)
 
 **TIMING DIGRAMS FOR Encoder 8 To 3 in Dataflow Modelling**
+![Screenshot 2024-11-15 214932](https://github.com/user-attachments/assets/fc4c9abc-a014-447b-8e56-2e621debf490)
 
 **RESULTS**
 
-
+8:3 encoder implemented sucessfully turth table has varified
 
 
